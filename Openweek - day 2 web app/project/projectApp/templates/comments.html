@@ -1,0 +1,16 @@
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>{{ count }} Comments</h1>
+    <ul>
+      {% for comment in comments %}
+      <li><strong>{{ comment.owner }} :</strong>{{ comment.content }}</li>
+      {% endfor %}
+    </ul>
+     <button type="button"><a href="{% url 'home' %}">Home</a></button>
+  </body>
+</html>
